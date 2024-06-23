@@ -85,6 +85,7 @@ class FibonacciTest {
 
         // test not fibonacci numbers
         assertFalse(Fibonacci.isFibonacci(4));
+        assertFalse(Fibonacci.isFibonacci(100));
         assertFalse(Fibonacci.isFibonacci(-1));
         assertFalse(Fibonacci.isFibonacci(93));
         assertFalse(Fibonacci.isFibonacci(102334156));

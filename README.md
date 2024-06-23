@@ -1,6 +1,6 @@
 # Java 21 Project
 
-This project is a collection of Java classes and examples created to demonstrate the features and capabilities of Java 21. It is designed to refresh the Java knowledge, to help learn and understand the various aspects of the language.
+This project is a collection of Java classes and examples created to demonstrate the features and capabilities of Java 21. It is designed to refresh Java knowledge and help learn and understand various aspects of the language.
 
 [Release notes in Java 21](https://www.oracle.com/java/technologies/javase/21-relnote-issues.html)
 
@@ -38,4 +38,20 @@ The project is organized into two main build systems: Gradle and Maven. Each sys
 
 ### Algorithms
 
-- `Fibonacci`: This class contains methods to calculate Fibonacci numbers using various techniques
+- `Fibonacci`: This class contains methods to calculate Fibonacci numbers using various techniques.
+-  To be continued
+
+## New Java 21 Features
+
+- `ForeignFunctionAndMemoryAPI`: Demonstrates the new Foreign Function & Memory API.
+- `KeyEncapsulationMechanismAPI`: Shows examples of the Key Encapsulation Mechanism API.
+- `PatternMatchingForSwitch`: Demonstrates pattern matching for `switch` statements.
+- `RecordPatterns`: Shows examples of record patterns.
+- `ScopedValues`: Contains examples of scoped values.
+- `SequencedCollections`: Demonstrates sequenced collections.
+- `StringTemplates`: Shows examples of string templates.
+- `StructuredConcurrency`: Demonstrates structured concurrency.
+- `UnnamedClassesAndInstanceMainMethods`: Contains examples of unnamed classes and instance main methods.
+- `UnnamedPatternsAndVariables`: Shows examples of unnamed patterns and variables.
+- `VectorAPI`: Demonstrates the Vector API.
+- `VirtualThreads`: Contains examples of virtual threads.

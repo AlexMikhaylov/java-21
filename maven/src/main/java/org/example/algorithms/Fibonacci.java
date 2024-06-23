@@ -111,49 +111,40 @@ public class Fibonacci {
     }
 
     /**
+     * Checks if a given number is a Fibonacci number.
+     *
+     * @param number the number to check.
+     * @return true if the number is a Fibonacci number, false otherwise.
+     * This method uses the iterative approach to calculate Fibonacci numbers.
+     * It iterates from 0 to the given number, calculating each Fibonacci number using the calculateFibonacciIterative method.
+     * If the calculated Fibonacci number equals the given number, it returns true.
+     * If the calculated Fibonacci number is greater than the given number, it returns false.
+     */
+    public static boolean isFibonacci(long number){
+        for(int i = 0; calculateFibonacciIterative(i) <= number; i++){
+            if(calculateFibonacciIterative(i) == number){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
      * The main method to test the methods.
      */
     public static void main(String[] args) {
-        // Testing calculateFibonacciBad
-        System.out.println(calculateFibonacciBad(0)); // 0
-        System.out.println(calculateFibonacciBad(1)); // 1
-        System.out.println(calculateFibonacciBad(2)); // 1
-        System.out.println(calculateFibonacciBad(3)); // 2
-        System.out.println(calculateFibonacciBad(4)); // 3
-        System.out.println(calculateFibonacciBad(5)); // 5
-
-        // Testing calculateFibonacciMemoization
-        System.out.println(calculateFibonacciMemoization(40)); // 102_334_155
-        System.out.println(calculateFibonacciMemoization(92)); // 7_540_113_804_746_346_429
-
-        try {
-            System.out.println(calculateFibonacciMemoization(-1));
-        } catch (IllegalArgumentException e) {
-            System.err.println(e.getMessage());
-        }
-        try {
-            System.out.println(calculateFibonacciMemoization(93));
-        } catch (IllegalArgumentException e) {
-            System.err.println(e.getMessage());
-        }
-
-        // Testing calculateFibonacciIterative
-        System.out.println(calculateFibonacciIterative(42)); // 267_914_296
-        System.out.println(calculateFibonacciIterative(90)); // 2_880_067_194_370_816_120
-
-        try {
-            System.out.println(calculateFibonacciIterative(-1));
-        } catch (IllegalArgumentException e) {
-            System.err.println(e.getMessage());
-        }
-        try {
-            System.out.println(calculateFibonacciIterative(93));
-        } catch (IllegalArgumentException e) {
-            System.err.println(e.getMessage());
-        }
-
-        // Testing the stream method
-        Fibonacci fibonacci = new Fibonacci();
-        fibonacci.fibonacciStream().limit(50).forEachOrdered(System.out::println); // expected first 50 fibonacci numbers
+        System.out.println(isFibonacci(-1)); // expected false
+        System.out.println(isFibonacci(102334155)); // expected true
+        System.out.println(isFibonacci(832040)); // expected true
+        System.out.println(isFibonacci(832041)); // expected false
+        System.out.println(isFibonacci(0)); // expected true
+        System.out.println(isFibonacci(1)); // expected true
+        System.out.println(isFibonacci(2)); // expected true
+        System.out.println(isFibonacci(3)); // expected true
+        System.out.println(isFibonacci(4)); // expected false
+        System.out.println(isFibonacci(5)); // expected true
+        System.out.println(isFibonacci(6)); // expected false
+        System.out.println(isFibonacci(7)); // expected false
+        System.out.println(isFibonacci(8)); // expected true
     }
 }

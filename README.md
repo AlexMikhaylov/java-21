@@ -1,4 +1,4 @@
-# Java 21 Learning Project
+# Java 21 Project
 
 This project is a collection of Java classes and examples created to demonstrate the features and capabilities of Java 21. It is designed to refresh the Java knowledge, to help learn and understand the various aspects of the language.
 

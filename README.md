@@ -2,6 +2,8 @@
 
 This project is a collection of Java classes and examples created to demonstrate the features and capabilities of Java 21. It is designed to refresh the Java knowledge, to help learn and understand the various aspects of the language.
 
+[Release notes in Java 21](https://www.oracle.com/java/technologies/javase/21-relnote-issues.html)
+
 ## Project Structure
 
 The project is organized into two main build systems: Gradle and Maven. Each system has its own directory structure and configuration files.

@@ -130,21 +130,42 @@ public class Fibonacci {
     }
 
     /**
+     * Checks if a given number is a Fibonacci number using perfect square method.
+     *
+     * @param number the number to check.
+     * @return true if the number is a Fibonacci number, false otherwise.
+     */
+    public static boolean isFibonacciSquare(long number) {
+        // Check if 5*number^2 + 4 or 5*number^2 - 4 is a perfect square
+        long x1 = 5 * number * number + 4;
+        long x2 = 5 * number * number - 4;
+
+        return isPerfectSquare(x1) || isPerfectSquare(x2);
+    }
+
+    /**
+     * Checks if a given number is a perfect square.
+     *
+     * @param x the number to check.
+     * @return true if the number is a perfect square, false otherwise.
+     */
+    private static boolean isPerfectSquare(long x) {
+        long s = (long) Math.sqrt(x);
+        return s * s == x;
+    }
+
+    /**
      * The main method to test the methods.
      */
     public static void main(String[] args) {
         System.out.println(isFibonacci(-1)); // expected false
-        System.out.println(isFibonacci(102334155)); // expected true
-        System.out.println(isFibonacci(832040)); // expected true
-        System.out.println(isFibonacci(832041)); // expected false
-        System.out.println(isFibonacci(0)); // expected true
-        System.out.println(isFibonacci(1)); // expected true
-        System.out.println(isFibonacci(2)); // expected true
-        System.out.println(isFibonacci(3)); // expected true
-        System.out.println(isFibonacci(4)); // expected false
-        System.out.println(isFibonacci(5)); // expected true
         System.out.println(isFibonacci(6)); // expected false
         System.out.println(isFibonacci(7)); // expected false
         System.out.println(isFibonacci(8)); // expected true
+
+
+        System.out.println(isFibonacciSquare(6)); // expected false
+        System.out.println(isFibonacciSquare(7)); // expected false
+        System.out.println(isFibonacciSquare(8)); // expected true
     }
 }

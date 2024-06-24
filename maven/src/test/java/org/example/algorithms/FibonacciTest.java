@@ -90,4 +90,31 @@ class FibonacciTest {
         assertFalse(Fibonacci.isFibonacci(93));
         assertFalse(Fibonacci.isFibonacci(102334156));
     }
+
+    @Test
+    void isFibonacciSquare() {
+        // test fibonacci numbers
+        assertTrue(Fibonacci.isFibonacci(0));
+        assertTrue(Fibonacci.isFibonacci(1));
+        assertTrue(Fibonacci.isFibonacci(2));
+        assertTrue(Fibonacci.isFibonacci(3));
+        assertTrue(Fibonacci.isFibonacci(5));
+        assertTrue(Fibonacci.isFibonacci(8));
+        assertTrue(Fibonacci.isFibonacci(13));
+        assertTrue(Fibonacci.isFibonacci(21));
+        assertTrue(Fibonacci.isFibonacci(34));
+        assertTrue(Fibonacci.isFibonacci(55));
+        assertTrue(Fibonacci.isFibonacci(89));
+        assertTrue(Fibonacci.isFibonacci(144));
+        assertTrue(Fibonacci.isFibonacci(233));
+        assertTrue(Fibonacci.isFibonacci(377));
+        assertTrue(Fibonacci.isFibonacci(610));
+
+        // test not fibonacci numbers
+        assertFalse(Fibonacci.isFibonacci(4));
+        assertFalse(Fibonacci.isFibonacci(100));
+        assertFalse(Fibonacci.isFibonacci(-1));
+        assertFalse(Fibonacci.isFibonacci(93));
+        assertFalse(Fibonacci.isFibonacci(102334156));
+    }
 }

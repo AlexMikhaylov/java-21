@@ -49,6 +49,9 @@ public class OverloadedMethods {
 
         System.out.println(concatenate("Hello", 123)); // Calls the concatenate method with a string and an integer
         System.out.println(concatenate("Value is", true)); // Calls the concatenate method with a string and a boolean
+
+        // system.err -> error output stream
+        System.err.println("This is an error message"); // print error message
     }
 
     // Overloaded add methods

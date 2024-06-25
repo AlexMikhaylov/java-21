@@ -3,6 +3,8 @@ package org.example.basics;
 public class OverloadedMethods {
     public static void main(String[] args) {
         // sout in IntelliJ
+        // Ctrl + P -> Display all overloaded methods for method, hover mouse over the method name
+        // Ctrl + Q -> Quick documentation -> three points down right -> Open in a documentation window
         System.out.println("Hello"); // print line with string
         System.out.println(1234); // print line with int
 

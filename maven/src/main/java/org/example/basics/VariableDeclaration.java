@@ -52,9 +52,44 @@ public class VariableDeclaration {
         System.out.println("i: " + i);
         System.out.println("b: " + b);
 
+        // Expressions assignment and unary operators
+
+        double priceJuce = 1.5;
+        double priceApple = 0.75;
+
+        // from right to left
+        priceApple = priceJuce = 1.6;
+        //           --------1-------
+        // ---2-----
+        System.out.println(-priceJuce);
+        System.out.println(-(-priceJuce));
+        System.out.println(+priceJuce);
+
+        // Math.random between 0 (inclusive) and 1 (exclusive)
+        double random = Math.random();
+        System.out.println(random);
+        System.out.println(-random);
+
+        // Modulo operator (%) remainder of division a % b = a - (b * Math.floor(a / b))
+        int remainder = 10 % 3;
+        System.out.println(STR."Remainder: \{remainder}");
+
+        double totalMinutes = 125.33;
+        System.out.println( Math.floor(totalMinutes / 60) + " hours and " + (totalMinutes % 60) + " minutes");
+
+        // Automatic type promotion (widening conversion)
+        double j = 111.111;
+        int k = 200;
+        System.out.println( j * k); // double
+
+        char m = 'M';
+        // char s = m + 1; // Error: incompatible types: char cannot be converted to int
+        char s = (char) (m + 1);
+        System.out.println(s);
+
         // Final variable declaration (constant)
         final double PI = 3.1415926535897932;
-        System.out.println("PI: " + PI);
+        System.out.println(STR."PI: \{PI}");
 
         // Example: Using final with other types
         final String GREETING = "Hello, World!";

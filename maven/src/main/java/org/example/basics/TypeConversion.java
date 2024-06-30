@@ -14,9 +14,6 @@ public class TypeConversion {
 
     // There is no type conversion between boolean and any other type.
 
-
-
-
     public static void main(String[] args) {
         byte byteValue = 127;
         short shortValue = byteValue; // implicit narrowing conversion
@@ -42,7 +39,6 @@ public class TypeConversion {
 
         // Convert to String, it's not a type conversion, it's a method call.
         String s = String.valueOf(value);
-
     }
 
 }

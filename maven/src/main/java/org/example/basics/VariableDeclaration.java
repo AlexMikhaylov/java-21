@@ -135,5 +135,20 @@ public class VariableDeclaration {
         int cf = 10;
         cf *= (int) 3.1215;
         System.out.println(cf); // 30 because of cf *= ((int) 3.1215)
+
+        /*
+        * prefix increment operators
+        * ++var
+        *
+        * prefix decrement operators
+        * --var
+        *
+        * postfix increment operators
+        * var++
+        *
+        * postfix decrement operators
+        * var--
+        *
+        * */
     }
 }

@@ -103,5 +103,37 @@ public class VariableDeclaration {
         System.out.println("Customer Age: " + customerAge);
         System.out.println("Annual Salary: " + annualSalary);
         System.out.println("Is Employee Active? " + isEmployeeActive);
+
+        /*
+        * Assignment operators
+        * = *= /= %= -= += <<= >>= >>>= &= ^= |=
+        * = means that the assignment operator should be used to assign a value to a variable.
+        * *= means that the assignment operator should be used to multiply a variable by a value.
+        * /= means that the assignment operator should be used to divide a variable by a value.
+        * %= means that the assignment operator should be used to calculate the remainder of a division.
+        * -= means that the assignment operator should be used to subtract a value from a variable.
+        * += means that the assignment operator should be used to add a value to a variable.
+        * <<= means that the assignment operator should be used to left-shift a variable by a value.
+        * >>= means that the assignment operator should be used to right-shift a variable by a value.
+        * >>>= means that the assignment operator should be used to unsigned right-shift a variable by a value
+        * &= means that the assignment operator should be used to bitwise AND a variable with a value.
+        * ^= means that the assignment operator should be used to bitwise XOR a variable with a value.
+        * |= means that the assignment operator should be used to bitwise OR a variable with a value.
+        *
+        *
+        * var = var OP (expression) => var OP= (expression)
+        *
+        */
+        int counter = 0;
+        counter += 2;
+
+        // attention
+        int cd = 10;
+        cd *= 3.1215; // versteckte Typumwandlung
+        System.out.println(cd); // 31
+
+        int cf = 10;
+        cf *= (int) 3.1215;
+        System.out.println(cf); // 30 because of cf *= ((int) 3.1215)
     }
 }

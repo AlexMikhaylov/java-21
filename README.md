@@ -30,9 +30,14 @@ The project is organized into two main build systems: Gradle and Maven. Each sys
 
 ### Basics
 
+- `BinaryOperators`: Demonstrates the various binary operators in Java.
+- `ConsoleInputs`: Demonstrates the reading of the input streams from the console using the Scanner class.
 - `JavaDataTypes`: Demonstrates the various data types in Java.
 - `Literals`: Shows examples of different literals in Java.
+- `NumericEdgeCases`: Shows examples of different numeric precise issues and overflow/underflow cases in Java.
 - `OverloadedMethods`: (To be implemented)
+- `StringsConcatenation`: Shows examples of combining and concatenating strings in Java.
+- `TypeConversion`: Shows examples of type explicit and implicit type conversions in Java.
 - `VariableDeclaration`: Contains examples of variable declarations and initializations.
 - To be continued
 

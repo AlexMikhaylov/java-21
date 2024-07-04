@@ -37,6 +37,7 @@ The project is organized into two main build systems: Gradle and Maven. Each sys
 - `NumericEdgeCases`: Shows examples of different numeric precise issues and overflow/underflow cases in Java.
 - `OverloadedMethods`: Shows examples of overloaded methods in Java.
 - `StringsConcatenation`: Shows examples of combining and concatenating strings in Java.
+- `SwitchCaseCalculator`: Shows examples of modern and traditional switch-case statements in Java.
 - `TypeConversion`: Shows examples of type explicit and implicit type conversions in Java.
 - `VariableDeclaration`: Contains examples of variable declarations and initializations.
 - To be continued

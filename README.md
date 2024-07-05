@@ -1,63 +1,38 @@
 # Java 21 Project
 
-This project is a collection of Java classes and examples created to demonstrate the features and capabilities of Java 21. It is designed to refresh Java knowledge and help learn and understand various aspects of the language.
+This project demonstrates the features and capabilities of Java 21, designed to refresh Java knowledge and explore various aspects of the language.
 
-[Release notes in Java 21](https://www.oracle.com/java/technologies/javase/21-relnote-issues.html)
+[Java 21 Release Notes](https://www.oracle.com/java/technologies/javase/21-relnote-issues.html)
 
 ## Project Structure
 
-The project is organized into two main build systems: Gradle and Maven. Each system has its own directory structure and configuration files.
+The project includes both Gradle and Maven build systems:
 
-### Gradle Structure
+### Gradle
 
-- `gradle/`: Contains Gradle-related files and directories.
-  - `build.gradle.kts`: The Gradle build script.
+- `gradle/`: Contains Gradle-related files.
+  - `build.gradle.kts`: The build script.
   - `gradlew`, `gradlew.bat`: The Gradle wrapper scripts.
-  - `settings.gradle.kts`: The Gradle settings file.
+  - `settings.gradle.kts`: The settings file.
 
-### Maven Structure
+### Maven
 
-- `maven/`: Contains Maven-related files and directories.
-  - `pom.xml`: The Maven build configuration file.
-  - `src/main/java/pro/mikhaylov/basics/`: The source code directory containing Java classes.
-  - `src/test/java/`: The test code directory.
+- `maven/`: Contains Maven-related files.
+  - `pom.xml`: The build configuration file.
+  - `src/main/java/pro/mikhaylov/basics/`: Java source code directory.
+  - `src/test/java/`: Test code directory.
 
-## Java Classes
+## Java Classes Overview
 
 ### Application
-
-- `Application`: The main entry point of the Java application.
+- Main entry point of the Java application.
 
 ### Basics
-
-- `BinaryOperators`: Demonstrates the various binary operators in Java.
-- `ConsoleInputs`: Demonstrates the reading of the input streams from the console using the Scanner class.
-- `JavaDataTypes`: Demonstrates the various data types in Java.
-- `Literals`: Shows examples of different literals in Java.
-- `NumericEdgeCases`: Shows examples of different numeric precise issues and overflow/underflow cases in Java.
-- `OverloadedMethods`: Shows examples of overloaded methods in Java.
-- `StringsConcatenation`: Shows examples of combining and concatenating strings in Java.
-- `SwitchCaseCalculator`: Shows examples of modern and traditional switch-case statements in Java.
-- `TypeConversion`: Shows examples of type explicit and implicit type conversions in Java.
-- `VariableDeclaration`: Contains examples of variable declarations and initializations.
-- To be continued
+- Demonstrates binary operators, console inputs, data types, literals, numeric edge cases, overloaded methods, string concatenation, switch-case statements, type conversions, and variable declarations. To be continued.
 
 ### Algorithms
-
-- `Fibonacci`: This class contains methods to calculate Fibonacci numbers using various techniques.
--  To be continued
+- Contains methods for calculating factorials and Fibonacci numbers. To be continued.
 
 ## New Java 21 Features
-
-- `ForeignFunctionAndMemoryAPI`: Demonstrates the new Foreign Function & Memory API.
-- `KeyEncapsulationMechanismAPI`: Shows examples of the Key Encapsulation Mechanism API.
-- `PatternMatchingForSwitch`: Demonstrates pattern matching for `switch` statements.
-- `RecordPatterns`: Shows examples of record patterns.
-- `ScopedValues`: Contains examples of scoped values.
-- `SequencedCollections`: Demonstrates sequenced collections.
-- `StringTemplates`: Shows examples of string templates.
-- `StructuredConcurrency`: Demonstrates structured concurrency.
-- `UnnamedClassesAndInstanceMainMethods`: Contains examples of unnamed classes and instance main methods.
-- `UnnamedPatternsAndVariables`: Shows examples of unnamed patterns and variables.
-- `VectorAPI`: Demonstrates the Vector API.
-- `VirtualThreads`: Contains examples of virtual threads.
+- Demonstrates new features such as the Foreign Function & Memory API, Key Encapsulation Mechanism API, pattern matching for `switch`, record patterns, scoped values, sequenced collections, string templates, structured concurrency, unnamed classes and instance main methods, unnamed patterns and variables, the Vector API, and virtual threads. To be continued.
+```

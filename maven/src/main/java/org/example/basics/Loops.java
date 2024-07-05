@@ -68,8 +68,27 @@ public class Loops {
         }
     }
 
-    private static void demoComplexForLoop(){
+    private static void demoNestedLoop(){
+        // multiplication table
+        end:
+        for (int x = 1; x <= 10; x++) {
+            for (int y = 1; y <= 10; y++) {
+                System.out.printf("%3d ", x * y);
+                if(x*y == 25)
+                    break end; // break; only for internal loop, break end; for the entire loop
+            }
+            System.out.println();
+        }
+    }
 
+    private static void useNestedLoop(){
+        // multiplication table
+        for (int x = 1; x <= 10; x++) {
+            for (int y = 1; y <= 10; y++) {
+                System.out.printf("%3d ", x * y);
+            }
+            System.out.println();
+        }
     }
 
     private static void howManyDigitsHasNumber(int number){
@@ -124,5 +143,7 @@ public class Loops {
         howManyDigitsHasNumber(12345);
         demoBreakAndContinueWhileLoop();
         demoForLoop();
+        useNestedLoop();
+        demoNestedLoop();
     }
 }

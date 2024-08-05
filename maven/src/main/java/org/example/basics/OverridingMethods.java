@@ -5,16 +5,20 @@ public class OverridingMethods {
         lines(14, '*');
         lines(10);
 
-        random();
-        random(100, 200);
-        random(100, 200, 2);
-        random(100.0, 200.0, 3);
-
+        System.out.println(random());
+        System.out.println(random(200.0));
+        System.out.println(random(100, 200));
+        System.out.println(random(100.0, 200.0));
     }
 
     static double random(){
         return Math.random();
     }
+
+//    doesn't work:
+//    static void random(){
+//        Math.random();
+//    }
 
     static double random(int min, int max){
         return Math.random() * (max - min) + min;
@@ -24,24 +28,18 @@ public class OverridingMethods {
         return Math.random() * (max - min) + min;
     }
 
-    static double random(int min, int max, int precision){
-        return Math.round(Math.random() * (max - min) + min) / Math.pow(10, precision);
-    }
-
-    static double random(double min, double max, int precision){
-        return Math.round(Math.random() * (max - min) + min) / Math.pow(10, precision);
-    }
 
     static double random(double max){
         return Math.random() * max;
     }
 
-    // Optional parameter
+    // Optional parameter workaround
     static void lines(int length){
         lines(length, '#');
     }
 
     static void lines(int length, char c){
+        // repeat() function since Java 11
         System.out.println(("" + c).repeat(length));
     }
 

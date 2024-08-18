@@ -14,7 +14,8 @@ public class VariableDeclaration {
         System.out.println("Age: " + age);
 
         // Example of long integer declaration for larger values
-        long bigAge = 100_000_000_000_000L;
+        long bigAge;
+        bigAge = 100_000_000_000_000L;
         System.out.println("Big Age: " + bigAge);
 
         // Using BigInteger for extremely large numbers
@@ -33,7 +34,7 @@ public class VariableDeclaration {
         System.out.println("Double Age: " + doubleAge);
         System.out.println("Float Age: " + floatAge);
 
-        // Character type declaration
+        // Character type declaration and initialization
         char charGender = 'M';
         System.out.println("Gender: " + charGender);
 
